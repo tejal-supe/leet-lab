@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
     res.send("Helllo very excited!!")
 })
 
-app.use(("/api/v1", authRoutes));
+app.use("/api/v1", authRoutes);
 
 
 app.listen((PORT), () => {
